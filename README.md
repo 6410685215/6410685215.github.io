@@ -1,7 +1,6 @@
 ### Hi there 👋, I'm Patcharapon Tappakwan
 
-<!-- ![img](LINE_ALBUM_2022.7.9_230908.jpg) -->
-<img src=LINE_ALBUM_2022.7.9_230908.jpg width="140" height="200"></img>
+![img](LINE_ALBUM_2022.7.9_230908.jpg)
 
 #### About me
 * 🪪Student ID: 6410685215
