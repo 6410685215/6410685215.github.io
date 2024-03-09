@@ -170,6 +170,7 @@
         background-color: #030637CC;
         overflow-x: hidden;
         padding-top: 60px;
+        transition: 0.3s;
     }
     header+div{
         margin-top: 50px;
