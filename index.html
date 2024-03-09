@@ -5,26 +5,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume Patcharapon TU</title>
-  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/desktop.css">
+  <link rel="stylesheet" href="css/mobile.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sarabun" rel="stylesheet">
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
 </head>
 
-<body class="c-1 b">
+<body>
   <header>
-    <nav>
+    <span class="hidden-pc" ><a href="javascript:void(0)" onclick="openNav()">☰</a></span>
+    <div id="mySidenav">
       <ul>
-        <li class="bb-none c-1"><a href="#home"><b>Home</b></a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="certificate.html">Certificate</a></li>
-        <li><a href="file.html">File</a></li>
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+        <li>|<a class="b-h" href="/">Home</a></li>
+        <li>|<a href="certificate.html">Certificate</a></li>
+        <li>|<a href="file.html">File</a></li>
+        <li>|<a href="contact.html">Contact</a><span class="hidden-m">|</span></li>
       </ul>
-    </nav>
-    <h1><i>Resume</i></h1>
+    </div>
+    <h1>My Resume</h1>
   </header>
-  <main class="b-l b-r">
-    <div class="paper">
+    
+  <div>
+  <main>
+    <div>
       <section class="head">
         <h1>Patcharapon Tappakwan</h1>
         <p><i>พชรพล ทัพผักแว่น</i></p>
@@ -37,7 +55,7 @@
             +666 5048 3001</a> |
           <a href="mailto:patcharapon.tap@dome.tu.ac.th" target="_blank">
             patcharapon.tap@dome.tu.ac.th</a> |
-          <a href="https://6410685215.github.io">
+          <a href="https://6410685215.github.io/contact">
             https://6410685215.github.io</a>
           </a>
         </p>
@@ -100,10 +118,11 @@
       </section>
     </div>
   </main>
-
-  <footer  class="b-l b-r b-b">
-    <p>© 2024 Patcharapon Tappakwan<span class="tab"></span><span class="tab"></span></p>
+  
+  <footer>
+    <p>© 2024 Patcharapon Tappakwan</p>
   </footer>
+  </div>
 </body>
 
 </html>

@@ -5,25 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume Patcharapon TU</title>
-  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/desktop.css">
+  <link rel="stylesheet" href="css/mobile.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sarabun" rel="stylesheet">
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
 </head>
 
-<body class="c-2">
+<body>
   <header>
-    <nav>
+    <span class="hidden-pc" ><a href="javascript:void(0)" onclick="openNav()">☰</a></span>
+    <div id="mySidenav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="bb-none c-2"><a href="#contact"><b>Contact</b></a></li>
-        <li><a href="certificate.html">Certificate</a></li>
-        <li><a href="file.html">File</a></li>
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+        <li>|<a href="/">Home</a></li>
+        <li>|<a href="certificate.html">Certificate</a></li>
+        <li>|<a href="file.html">File</a></li>
+        <li>|<a class="b-h" href="contact.html">Contact</a><span class="hidden-m">|</span></li>
       </ul>
-    </nav>
-    <h1><i>Resume</i></h1>
+    </div>
+    <h1>My Resume</h1>
   </header>
-  <main class="b-l b-r">
+    
+  <div>
+  <main>
     <div class="paper">
       <section class="head">
         <h1>Contact</h1>
@@ -56,25 +74,20 @@
       </section>
       <section class="contact">
         <h3>Call me</h3>
-        <ul  style="list-style-type: disc;">
+        <ul style="list-style-type: disc;">
           <li><a href="tel:+66650483001" target="_blank">
               +666 5048 3001</a></li>
           <li><a href="tel:+66863560484" target="_blank">
               +668 6356 0484</a></li>
         </ul>
       </section>
-      <div class="note">
-        <h5>NOTE!</h5>
-        <p>I apologize for any inconvenience, If I am unable to receiving phone calls.
-          However, I kindly request that you provide an alternative method of communication.
-          If I am unable to reach you, I will certainly return your call at the specified time.
-          Thank you for your understanding.</p>
-      </div>
     </div>
   </main>
-  <footer class="b-l b-r b-b">
-    <p>© 2024 Patcharapon Tappakwan<span class="tab"></span><span class="tab"></span></p>
+  
+  <footer>
+    <p>© 2024 Patcharapon Tappakwan</p>
   </footer>
+  </div>
 </body>
 
 </html>

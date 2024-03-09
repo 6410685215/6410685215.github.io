@@ -1,0 +1,228 @@
+@media  screen and (min-width: 761px) and (max-width: 1023px){
+    .hidden-pc{
+        display: none;
+    }
+    .closebtn{
+        display: none;
+    }
+
+    header{
+        margin: 0;
+        background-color: #030637BB;
+        backdrop-filter: saturate(180%) blur(3px);
+
+        width: 100dvw;
+        height: 50px;
+    
+        position: fixed;
+        top: 0;
+
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    header h1{
+        margin: 0 auto;
+        color: white;
+        font-style: italic;
+    }
+    header ul{
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 30px;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+
+        font-size: 1.5rem;
+        color: white;
+    }
+    header ul li{
+        margin: 0;
+        padding: 0;
+    }
+    header ul li a{
+        margin: 0 20px;
+        text-decoration: none;
+        color: white;
+    }
+    header div{
+        grid-column: 1/2;
+        width: 100% !important;
+    }
+    header+div{
+        margin-top: 50px;
+    }
+
+    main{
+        padding-top: 20px;
+    }
+    main div{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+
+        width: 90dvw;
+
+        background-color: white;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    }
+    .head{
+        margin-bottom: 25px;
+        border-bottom: 4px solid #352F44;
+    }
+    .head h1{
+        margin-top: 5px;
+        margin-bottom: 0;
+        font-size: 2rem;
+    }
+    .head p{
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+        color: grey;
+    }
+    section i{
+        color: gray;
+    }
+    section h2{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-bottom: 3px;
+        border-bottom: 3px solid #5C5470;
+    }
+    section p{
+        margin-top: 10px;
+    }
+    .add p{
+        margin-bottom: 3px;
+    }
+    .add ul{
+        list-style: none;
+        margin: 0;
+    }
+    footer{
+        margin-left: 0.2in;
+    }
+}
+
+@media  screen and (max-width: 760px){
+
+    .hidden-m{
+        display: none;
+    }
+    .closebtn{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    header span{
+        margin: auto 30px;
+    }
+    header span a{
+        color: whitesmoke;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+    header{
+        margin: 0;
+        background-color: #030637BB;
+        backdrop-filter: saturate(180%) blur(3px);
+
+        width: 100dvw;
+        height: 50px;
+    
+        position: fixed;
+        top: 0;
+
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    header h1{
+        margin: 0 auto;
+        color: white;
+        font-style: italic;
+    }
+    header ul{
+        list-style: none;
+
+        font-size: 1.5rem;
+        color: white;
+    }
+    header ul li{
+        margin: 0;
+        padding: 0;
+    }
+    header ul li a{
+        margin: 0 20px;
+        text-decoration: none;
+        color: white;
+    }
+    header div{
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        background-color: #030637CC;
+        overflow-x: hidden;
+        padding-top: 60px;
+    }
+    header+div{
+        margin-top: 50px;
+    }
+
+    main{
+        padding-top: 20px;
+    }
+    main div{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+
+        width: 90dvw;
+
+        background-color: white;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    }
+    .head{
+        margin-bottom: 25px;
+        border-bottom: 4px solid #352F44;
+    }
+    .head h1{
+        margin-top: 5px;
+        margin-bottom: 0;
+        font-size: 2rem;
+    }
+    .head p{
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+        color: grey;
+    }
+    section i{
+        color: gray;
+    }
+    section h2{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-bottom: 3px;
+        border-bottom: 3px solid #5C5470;
+    }
+    section p{
+        margin-top: 10px;
+    }
+    .add p{
+        margin-bottom: 3px;
+    }
+    .add ul{
+        list-style: none;
+        margin: 0;
+    }
+    footer{
+        margin-left: 0.2in;
+    }
+}
