@@ -1,6 +1,5 @@
 @media screen and (max-width: 760px){
     main {
-        position: relative;
         overflow: scroll;
     }
     
