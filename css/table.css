@@ -42,5 +42,14 @@ td div.course {
     background-color: #F2B88077;
 }
 .c5 {
+    background-color: #caf2a477;
+}
+.c6 {
     background-color: #F2E1A477;
+}
+
+.hide {
+    color: #FFFFFFFF;
+    background-color: #FFFFFFFF;
+    box-shadow: none;
 }

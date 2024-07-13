@@ -12,9 +12,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sarabun" rel="stylesheet">
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+
 </head>
 <body>
-    <header style="display: flex;">
+    <header>
+        <span class="hidden-pc" ><a href="javascript:void(0)" onclick="openNav()">☰</a></span>
+        <div id="mySidenav">
+        <ul>
+            <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+            <li>|<a href="/">Home</a></li>
+            <li>|<a href="certificate.html">Certificate</a></li>
+            <li>|<a href="file.html">File</a></li>
+            <li>|<a href="contact.html">Contact</a></li>
+            <li>|<a class="b-h" href="class.html">Class</a><span class="hidden-m">|</span></li>
+        </ul>
+        </div>
         <h1>Class Table</h1>
     </header>
 
@@ -62,18 +84,22 @@
                 <td>Wednesday</td>
                 <td colspan="2">
                     <div class="course c4">
-                    IS314 <br>
-                    Database System
+                    XX000 <br>
+                    Unknown
                     </div>
                 </td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td colspan="2">
+                    <div class="course c5">
+                    XX000 <br>
+                    Unknown
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>Thursday</td>
                 <td colspan="2">
-                    <div class="course c5">
+                    <div class="course c6">
                     CN416 <br>
                     Cloud Computing
                     </div>
@@ -84,7 +110,12 @@
             </tr>
             <tr>
                 <td>Friday</td>
-                <td></td>
+                <td>
+                    <div class="course hide">
+                    XX000 <br>
+                    Unknown
+                    </div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
