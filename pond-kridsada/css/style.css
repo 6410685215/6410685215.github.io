@@ -42,7 +42,7 @@ h3{
 
 .card {
 	color: #013243; /*SHERPA BLUE*/
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	width: 300px;
@@ -141,6 +141,18 @@ h3{
 	text-align: right;
 }
 
-.space {
+.space-40 {
+	margin-left: 40px;
+}
+.space-20 {
 	margin-left: 20px;
+}
+.space-10 {
+	margin-left: 10px;
+}
+.space-5 {
+	margin-left: 5px;
+}
+.space-3 {
+	margin-left: 3px;
 }
