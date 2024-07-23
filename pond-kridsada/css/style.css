@@ -156,3 +156,21 @@ h3{
 .space-3 {
 	margin-left: 3px;
 }
+
+
+#confetti-holder {
+	position: fixed;
+	height: 100vh;
+	pointer-events: none;
+	width: 100%;
+	top: 0;
+	z-index: 2;
+	text-align: center;
+	vertical-align:middle;
+} 
+
+#e0DQ82qcIov1 {
+	height: 150vh;
+	min-width: 600px;
+	min-height: 600px;
+}
