@@ -15,6 +15,11 @@ table, th, td {
 
 th, td {
     padding: 15px;
+}
+th {
+    text-align: center;
+}
+td {
     text-align: left;
 }
 
