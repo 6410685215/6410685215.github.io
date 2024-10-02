@@ -1,7 +1,7 @@
 #!/bin/bash
 
-USERNAME = "Tea"
-PASSWORD =  "$6$MywQFlzN.BD5UvF4$u0DVzU04r92QpsNJrIgqmjy.J0ERduKzXizpzVQpfRNLQrY2EyuoYUUoLFXAM7BYQjU9ga86csCshjm2FXAiO0"
+USERNAME="Tea"
+PASSWORD="$6$MywQFlzN.BD5UvF4$u0DVzU04r92QpsNJrIgqmjy.J0ERduKzXizpzVQpfRNLQrY2EyuoYUUoLFXAM7BYQjU9ga86csCshjm2FXAiO0"
 
 # Add user
 if ! id -u $USERNAME > /dev/null 2>&1; then
