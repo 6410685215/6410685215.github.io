@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERNAME="Tea"
+USERNAME="tea"
 PASSWORD="$6$MywQFlzN.BD5UvF4$u0DVzU04r92QpsNJrIgqmjy.J0ERduKzXizpzVQpfRNLQrY2EyuoYUUoLFXAM7BYQjU9ga86csCshjm2FXAiO0"
 
 # Add user
