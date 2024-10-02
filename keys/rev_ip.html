@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         const searchParams = new URLSearchParams(window.location.search);
-        const ip = searchParams.get('ip');
-        const hostname = searchParams.get('hostname');
+        const IP = searchParams.get('ip');
+        const HOSTNAME = searchParams.get('hostname');
 
-        let data = require('./data.json');
-        data[hostname] = {
-            hostname: hostname,
-            ip: ip
+        const data = require('./data.json');
+        data[HOSTNAME] = {
+            hostname: HOSTNAME,
+            ip: IP
         }
 
         const fs = require('fs');
