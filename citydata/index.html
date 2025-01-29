@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,20 @@
     <title>Traffy Fondue</title>
 
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,500,600,700,800,900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,500,600,700,800,900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded">
+    <link rel="stylesheet" href="modal.css">
 </head>
+
 <body>
-    <header>
+    <header class="content">
         <div class="org-menu">
             <div>
                 <img src="./image/img-3.jpeg" alt="">
                 <h1>ชื่อหน่วยงาน
                     <span class="material-symbols-rounded">
-                    arrow_drop_down</span>
+                        arrow_drop_down</span>
                 </h1>
             </div>
         </div>
@@ -35,24 +39,24 @@
         </div>
     </header>
     <main>
-        <section class="main-sec-join">
+        <section class="main-sec-join content">
             <h2>เข้าร่วมหน่วยงาน</h2>
             <div class="action-sec-join">
-                <a href="">
+                <button id="fondue-help-join" onclick="openModal('fondue-help-join')">
                     <div class="btn-sec-join">
                         <span class="material-symbols-rounded">
                             support_agent
                         </span>
                         <p>ขอรหัสเพื่อเริ่มใช้งาน</p>
                     </div>
-                </a><a href="">
+                </button><button id="code-join" class="openModal">
                     <div class="btn-sec-join">
                         <span class="material-symbols-rounded">
                             vpn_key
                         </span>
                         <p>ใส่รหัสเพื่อเริ่มใช้งาน</p>
                     </div>
-                </a><a href="">
+                </button><a href="">
                     <div class="btn-sec-join">
                         <span class="material-symbols-rounded">
                             add_circle
@@ -62,7 +66,30 @@
                 </a>
             </div>
         </section>
-        <section class="main-sec-org">
+        <section class="action-modal">
+            <div id="modal-container">
+                <div class="modal-background">
+                    <div class="modal">
+                        <h2>การขอ "รหัสเข้าใช้งาน" สำหรับ Traffy Fondue สามารถทำตามขั้นตอนดังนี้:</h2>
+                        <p>1. แจ้งชื่อหน่วยงาน ที่ประสงค์จะขอรหัสเข้าใช้งาน</p>
+                        <p>2. ระบุชื่อจังหวัดที่หน่วยงานตั้งอยู่</p>
+                        <p>3. เบอร์โทรศัพท์ของผู้ขอรับรหัส, เบอร์โทรศัพท์ที่สามารถติดต่อได้</p>
+                        <p>4. ส่งภาพเอกสารยืนยันตัวตน หนังสือราชการ หรือเอกสารที่สามารถยืนยันว่าเป็นตัวแทนจากหน่วยงานที่ขอ</p>
+                        <img src="./image/lineQR.png" alt="" width="120px" style="margin-inline: auto;">
+                        <p style="text-align: center; margin-inline: auto;">ส่งข้อมูลทั้งหมดผ่าน LINE ID: @fonduehelp ให้กับเจ้าหน้า Traffy Fondue</p>
+                        <a href="line://ti/p/@fonduehelp?oat_referrer=PROFILE">
+                            <div class="btn-fondue-help">
+                                <span class="material-symbols-rounded">
+                                    open_in_new
+                                </span>
+                                <p>ขอรหัสเพื่อเริ่มใช้งาน</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-sec-org content">
             <div class="search-sec-org">
                 <h2>หน่วยงานของท่าน</h2>
                 <input type="text" placeholder="ค้นหาหน่วยงาน">
@@ -184,8 +211,10 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="content">
 
     </footer>
+    <script src="modal.js"></script>
 </body>
+
 </html>
