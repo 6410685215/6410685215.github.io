@@ -169,7 +169,7 @@ main {
     height: 288px; 
     padding: 2.5rem 1rem;
     background-color: linen;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
     display: flex; 
     flex-direction: column;
