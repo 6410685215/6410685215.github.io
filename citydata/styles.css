@@ -5,7 +5,7 @@
     font-family: 'Kanit', sans-serif;
 }
 body {
-    background-color: #fffff0
+    background-color: #fdfdfd;
 }
 
 /* header */
@@ -47,7 +47,7 @@ header {
 }
 .logout-btn {
     display: inline;
-    padding: 16px 20px;
+    padding: 16px 0px;
     margin-inline: 0.5rem;
     border-radius: 12px;
     background-color: gold;
@@ -59,23 +59,23 @@ header {
 }
 .nav-btn {
     display: inline;
-    padding: 16px 20px;
+    padding: 16px 0px;
     border-radius: 12px;
 }
 .nav-btn:hover {
     background-color: #f1f1f1;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .main-nav a {
     text-decoration: none;
     color: #333;
     font-size: 1.2rem;
     font-weight: 500;
+    padding: 16px 20px;
 }
 
 .point {
     display: inline;
-    padding: 16px 20px;
+    padding: 16px 0px;
     margin-inline: 0.5rem;
     border-radius: 12px;
     background-color: lemonchiffon;
@@ -101,7 +101,7 @@ main {
     padding: 16px 20px;
     margin-inline: 0.5rem;
     border-radius: 12px;
-    background-color: #f1f1f1;
+    background-color: #eeeeee;
 }
 .action-sec-join a:hover {
     background-color: #e1e1e1;
@@ -126,13 +126,16 @@ main {
 }
 .search-sec-org {
     display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 .search-sec-org input {
     padding: 8px 20px;
     margin-inline: 1rem;
     border-radius: 12px;
     border: 1px solid #f1f1f1;
-    min-width: 50vw;
+    max-width: 800px;
+    width: 40vw;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .search-sec-org input:focus {
@@ -155,53 +158,34 @@ main {
 }
 
 /* org card */
-@media screen and (max-width: 1440px) {
-    .org-card {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2.5rem 1rem;
-        margin: 1rem;
-        background-color: white;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 12px;
-        width: 20vw;
-        flex-direction: column;
-    }
-    .sec-org-card a {
-        text-decoration: none;
-        color: #333;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        width: 20vw;
-        margin-inline: 0.5rem;
-    }
+.sec-org-card {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, 200px); 
+    justify-content: space-between;
+    grid-gap: 24px; 
 }
-@media screen and (max-width: 2560px) and (min-width: 1441px) {
-    .org-card {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2.5rem 1rem;
-        margin: 1rem;
-        background-color: white;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 12px;
-        width: 15vw;
-        flex-direction: column;
-    }
-    .sec-org-card a {
-        text-decoration: none;
-        color: #333;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        width: 15vw;
-        margin-inline: 0.5rem;
-    }
+.org-card {
+    width: 192px; 
+    height: 288px; 
+    padding: 2.5rem 1rem;
+    background-color: linen;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec-org-card a {
+    text-decoration: none;
+    color: #333;
+    width: 192px; 
+    height: 288px; 
+    padding: 2.5rem 1rem;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .org-card img {
@@ -218,15 +202,6 @@ main {
     margin-top: 0.5rem;
 }
 
-.sec-org-card {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 87vw;
-    margin: auto;
-}
 .org-card:hover {
     transform: scale(1.05);
 }
@@ -237,9 +212,10 @@ main {
     margin-top: 1rem;
     background-color: BurlyWood;
     color: DarkSlateGray;
-    padding: 8px 20px;
+    padding: 16px 20px;
     border-radius: 12px;
-    font-size: large;
+    font-size: 1rem;
+    font-weight: 500;
 }
 .btn-org-card p {
     margin-left: 1rem;
