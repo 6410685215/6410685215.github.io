@@ -49,6 +49,7 @@ body {
         display: table-cell;
         background: rgba(0, 0, 0, .8);
         vertical-align: middle;
+        justify-items: center;
 
         .modal {
             background: white;
