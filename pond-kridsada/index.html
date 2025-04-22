@@ -6,10 +6,29 @@
 
 	<link rel="icon" href="/css/favicon.png">
     <title>HBD - Pond</title>
-    
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+	<div class="modal" id="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>หลักสูตร</h4>
+				<button class="close-button" id="close-button" onclick="closeModal()">
+					<span class="close">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<ul class="modal-list">
+					<li><a href="/pond-kridsada/doc/bs-vetnurse-full-2560.pdf" target="_blank">KU_VetNurse</a></li>
+					<li><a href="/pond-kridsada/doc/VetNurse65_CMU.pdf" target="_blank">CMU_VetNurse</a></li>
+					<li><a href="/pond-kridsada/doc/RAMA_nurse.pdf" target="_blank">RAMA_Nurse</a></li>
+					<li><a href="https://ns.mahidol.ac.th/nurse_th/bns/bns2565/bns2565.html" target="_blank">MU_Nurse</a></li>
+			</div>
+		</div>
+	</div>
+
     <div class="card" id="tap-hover">
 		<div class="imgBox">
 			<div class="bark"></div>
@@ -36,7 +55,7 @@
 	</div>
 
 	<div id="confetti-holder">
-	
+
 		<svg id="e0DQ82qcIov1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 			viewBox="0 0 400 400" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
 			<g id="e0DQ82qcIov2" transform="matrix(.5 0 0 0.5 25.964331 264.154351)">
@@ -220,7 +239,7 @@
 				// ]]>
 			</script>
 		</svg>
-	
+
 	</div>
 	<script src="js/script.js"></script>
 </body>

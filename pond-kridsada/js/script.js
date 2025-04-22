@@ -17,3 +17,8 @@ function confettiShooter() {
 const tap_hover = document.getElementById('tap-hover');
 tap_hover.addEventListener('click', confettiShooter);
 tap_hover.addEventListener('mouseover', confettiShooter);
+
+function closeModal() {
+    const modal = document.getElementById('modal');
+    modal.style.display = 'none';
+}
