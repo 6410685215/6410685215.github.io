@@ -1,24 +1,11 @@
-@media  screen and (max-width: 811px){
-
-    .hidden-m{
+@media  screen and (min-width: 812px) and (max-width: 1023px){
+    .hidden-pc{
         display: none;
     }
     .closebtn{
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
+        display: none;
     }
-    header span{
-        margin: auto 30px;
-    }
-    header span a{
-        color: whitesmoke;
-        font-size: 1.5rem;
-        font-weight: bolder;
-        text-decoration: none;
-    }
+
     header{
         margin: 0;
         background-color: #030637BB;
@@ -31,7 +18,7 @@
         top: 0;
 
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 1fr;
     }
     header h1{
         margin: 0 auto;
@@ -39,7 +26,15 @@
         font-style: italic;
     }
     header ul{
+        margin: 0 auto;
+        margin-left: 10px;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 30px;
         list-style: none;
+        display: flex;
+        justify-content: space-around;
 
         font-size: 1.5rem;
         color: white;
@@ -54,14 +49,8 @@
         color: white;
     }
     header div{
-        height: 100vh;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        background-color: #030637CC;
-        overflow-x: hidden;
-        padding-top: 60px;
-        transition: 0.3s;
+        grid-column: 1/2;
+        width: 100% !important;
     }
     header+div{
         margin-top: 50px;
